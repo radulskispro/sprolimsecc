@@ -1,4 +1,7 @@
 # Prerequisites
 *.ddls.xml
 *.ddls.asddls
+*.cus0.xml
+*.cus1.xml
+*.avas.xml
 
