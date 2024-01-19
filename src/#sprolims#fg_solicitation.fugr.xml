@@ -1,0 +1,561 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Funções para solicitação</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>/SPROLIMS/LFG_SOLICITATIONTOP</SOBJ_NAME>
+    <SOBJ_NAME>/SPROLIMS/SAPLFG_SOLICITATION</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>/SPROLIMS/FM_COLLECT_CHANGE</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Editar coleta</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_DATA</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <TYP>BAPIRET2_T</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_DATA</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tabela de retorno</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>/SPROLIMS/FM_COLLECT_CHECK</FUNCNAME>
+     <SHORT_TEXT>Checar se pode ser editado</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_COLLECT_ID</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>WARPL</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BAPIRET2_T</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_COLLECT_ID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Plano de manutenção</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tabela de retorno</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>/SPROLIMS/FM_COLLECT_CH_AU</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Checar se tem autorizacao</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_COLLECT_ID</PARAMETER>
+       <TYP>WARPL</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <TYP>BAPIRET2_T</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EV_ERROR</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_COLLECT_ID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Plano de manutenção</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tabela de retorno</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_ERROR</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>/SPROLIMS/FM_COLLECT_CH_ED</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Checar se pode ser editado</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_COLLECT_ID</PARAMETER>
+       <TYP>WARPL</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <TYP>BAPIRET2_T</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EV_ERROR</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_COLLECT_ID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Plano de manutenção</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tabela de retorno</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_ERROR</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>/SPROLIMS/FM_COLLECT_CREATE</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Criar coleta atraves do APP de Quadro Basico do SPROLIMS</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_DATA</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <TYP>BAPIRET2_T</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EV_COLLECT_ID</PARAMETER>
+       <TYP>WARPL</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_DATA</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tabela de retorno</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_COLLECT_ID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Plano de manutenção</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>/SPROLIMS/FM_COLLECT_DELETE</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Eliminar coleta</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_COLLECT_ID</PARAMETER>
+       <TYP>WARPL</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <TYP>BAPIRET2_T</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_COLLECT_ID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Plano de manutenção</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tabela de retorno</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>/SPROLIMS/FM_GET_CHARAC</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Recupera as caracteristica baseado no material, lote, centro e categoria</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_BATCH</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>CHARG_D</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_BAUTL</PARAMETER>
+       <TYP>BAUTL</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_WERK</PARAMETER>
+       <TYP>/SPROLIMS/DE_WERK</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_DESCR_OTKAT</PARAMETER>
+       <TYP>/SPROLIMS/DE_DESCR_OTKAT</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_CHAR_VALUE</PARAMETER>
+       <TYP>ATWRT30</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_BATCH</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Número do lote</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_BAUTL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Conjunto</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_WERK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Elemento de dados para centro solicitante</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_DESCR_OTKAT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Descrição Campo</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_CHAR_VALUE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Valor da Caracteristica</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>/SPROLIMS/FM_SOLICITATION_CHAN</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Função para converter solicitação em ordem</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_SOLICITATION_ID</PARAMETER>
+       <TYP>QMNUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_NUM_AMOSTRA</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SPROCSEM/DE_NUM_AMOSTRA</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_ERROR</PARAMETER>
+       <TYP>FLAG</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <TYP>BAPIRET2_T</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EV_ORDER_ID</PARAMETER>
+       <TYP>AUFNR</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EV_ERROR_MESSAGE</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_SOLICITATION_ID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Nº da nota</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_NUM_AMOSTRA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Número da amostra</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_ERROR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Flag geral</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tabela de retorno</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_ORDER_ID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Nº ordem</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_ERROR_MESSAGE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Messagem de erro</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>/SPROLIMS/FM_SOLICITATION_CREA</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Criar solicitação</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_DATA</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <TYP>BAPIRET2_T</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EV_SOLICITATION_ID</PARAMETER>
+       <TYP>QMNUM</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EV_ERROR</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EV_ERROR_MESSAGE</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_DATA</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tabela de retorno</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_SOLICITATION_ID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Nº da nota</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_ERROR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>X para erros</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_ERROR_MESSAGE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>mensagem do erro</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>/SPROLIMS/FM_SOLICITATION_DEL</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Marcar para eliminar solicitação e ordem</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_SOLICITATION_ID</PARAMETER>
+       <TYP>QMNUM</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_ERROR</PARAMETER>
+       <TYP>FLAG</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EW_RETURN</PARAMETER>
+       <TYP>BAPIRET2</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EV_NUM_AMOSTRA</PARAMETER>
+       <TYP>/SPROCSEM/DE_NUM_AMOSTRA</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_SOLICITATION_ID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Nº da notificação</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_ERROR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Flag geral</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EW_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tabela de retorno</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_NUM_AMOSTRA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Número da amostra</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>/SPROLIMS/FM_SOL_ALTER_STATUS</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Alterar status da solicita</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_SOLICITATION_ID</PARAMETER>
+       <TYP>QMNUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_INACTIVE</PARAMETER>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_STATUS</PARAMETER>
+       <TYP>CHAR6</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <TYP>BAPIRET2_T</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_SOLICITATION_ID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Nº da nota</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_INACTIVE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Código de uma posição</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_STATUS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Campo de caracteres de comprimento 6</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tabela de retorno</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>/SPROLIMS/FM_SOL_EDIT</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Editar solicitacao</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_DATA</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <TYP>BAPIRET2_T</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EV_SOLICITATION_ID</PARAMETER>
+       <TYP>QMNUM</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_DATA</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tabela de retorno</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_SOLICITATION_ID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Nº da notificação</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>/SPROLIMS/FM_STATUS_UPDATE</FUNCNAME>
+     <SHORT_TEXT>Executa a funcao STAUTS_UPDATE</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_STATUS</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR6</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_OBJNR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>QMOBJNR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BAPIRET2_T</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_STATUS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Campo de caracteres de comprimento 6</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_OBJNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Nº objeto para administração de status</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tabela de retorno</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

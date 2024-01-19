@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>/SPROLIMS/TETRA</ARBGB>
+    <MASTERLANG>P</MASTERLANG>
+    <STEXT>Mensagens para a aplicação de Análise de Sementes SPROLIMS</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>/SPROLIMS/TETRA</ARBGB>
+     <MSGNR>000</MSGNR>
+     <TEXT>LC $1 com Du aplicado. Entrada de resultados bloqueada</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>/SPROLIMS/TETRA</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Caracteristica &amp;1 não encontrada. Verifique as carac. disponiveis.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>/SPROLIMS/TETRA</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Verifique etapa, centro trabalho e caracteristica.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>/SPROLIMS/TETRA</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Verifique LC &amp;1, CT &amp;2  e DU</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

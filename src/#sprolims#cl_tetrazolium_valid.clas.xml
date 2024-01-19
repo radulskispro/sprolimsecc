@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>/SPROLIMS/CL_TETRAZOLIUM_VALID</CLSNAME>
+    <LANGU>P</LANGU>
+    <DESCRIPT>Class TETRAZOLIUM validate</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_DATA_CHARAC</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Recupera a lista completa de caracteristicas</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>INSPECTION_LOT</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Nº do lote de controle</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>LOG</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Log</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>RAISE_EXCEPTION_CUSTOM</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Raise Exception Custom</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>WORK_CENTER</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Centro de trabalho</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>_HAS_CHARAC_BY_WORK_CENTER</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Verifica se existem caracteristicas por centro de trabalho</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>_HAS_DAMAGE</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Verifica os danos enviados é compativel com os cadastrados</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>_HAS_DU</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Verifica se lote de controle tem decisão de uso</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>RAISE_EXCEPTION_CUSTOM</CMPNAME>
+     <SCONAME>/SPROLIMS/CX_TETRAZOLIUM</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Exception para tretrazolium</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RAISE_EXCEPTION_CUSTOM</CMPNAME>
+     <SCONAME>IV_ID</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Campo do sistema ABAP: classe de mensagens</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RAISE_EXCEPTION_CUSTOM</CMPNAME>
+     <SCONAME>IV_MESSAGE</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Campo do sistema ABAP: obsoleto</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RAISE_EXCEPTION_CUSTOM</CMPNAME>
+     <SCONAME>IV_NUMBER</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Campo do sistema ABAP: nº da mensagem</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_HAS_CHARAC_BY_WORK_CENTER</CMPNAME>
+     <SCONAME>/SPROLIMS/CX_TETRAZOLIUM</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Exception para tretrazolium</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_HAS_DAMAGE</CMPNAME>
+     <SCONAME>/SPROLIMS/CX_TETRAZOLIUM</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Exception para tretrazolium</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_HAS_DU</CMPNAME>
+     <SCONAME>/SPROLIMS/CX_TETRAZOLIUM</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Exception para tretrazolium</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

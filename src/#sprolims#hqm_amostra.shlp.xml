@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SHLP" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD30V>
+    <SHLPNAME>/SPROLIMS/HQM_AMOSTRA</SHLPNAME>
+    <DDLANGUAGE>P</DDLANGUAGE>
+    <DDTEXT>SH Amostra</DDTEXT>
+    <ISSIMPLE>X</ISSIMPLE>
+    <SELMETHOD>/SPROLIMS/CDS_QM_C_SH_AMOSTRA</SELMETHOD>
+    <SELMTYPE>C</SELMTYPE>
+    <DIALOGTYPE>D</DIALOGTYPE>
+    <FUZZY_SIMILARITY>0.8</FUZZY_SIMILARITY>
+   </DD30V>
+   <DD32P_TABLE>
+    <DD32P>
+     <SHLPNAME>/SPROLIMS/HQM_AMOSTRA</SHLPNAME>
+     <FIELDNAME>SAMPLE_NUMBER</FIELDNAME>
+     <FLPOSITION>0001</FLPOSITION>
+     <ROLLNAME>/SPROLIMS/SAMPLE_NUMBER</ROLLNAME>
+     <SHLPINPUT>X</SHLPINPUT>
+     <SHLPOUTPUT>X</SHLPOUTPUT>
+     <SHLPSELPOS>01</SHLPSELPOS>
+     <SHLPLISPOS>01</SHLPLISPOS>
+     <ROLLCHANGE>N</ROLLCHANGE>
+     <SCRLEN3>40</SCRLEN3>
+    </DD32P>
+   </DD32P_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

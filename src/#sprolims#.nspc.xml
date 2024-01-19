@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_NSPC" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <NSPC>
+    <NAMESPACE>/SPROLIMS/</NAMESPACE>
+    <REPLICENSE>04575257581520027413</REPLICENSE>
+   </NSPC>
+   <NSPC_TEXT>
+    <SPRAS>P</SPRAS>
+    <DESCRIPTN>SPRO - Laboratory Information Management System</DESCRIPTN>
+    <OWNER>SPRO It Solutions</OWNER>
+   </NSPC_TEXT>
+  </asx:values>
+ </asx:abap>
+</abapGit>

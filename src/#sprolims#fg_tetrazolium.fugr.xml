@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Tetrazolium</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>/SPROLIMS/LFG_TETRAZOLIUMF01</SOBJ_NAME>
+    <SOBJ_NAME>/SPROLIMS/LFG_TETRAZOLIUMTOP</SOBJ_NAME>
+    <SOBJ_NAME>/SPROLIMS/SAPLFG_TETRAZOLIUM</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>/SPROLIMS/FM_REC_RESUL_TETRAZ</FUNCNAME>
+     <SHORT_TEXT>Entrada de Resultado Tetrazólio</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IW_RESULT_TETRAZ</PARAMETER>
+       <TYP>/SPROLIMS/ST_GW_RESULT_TETRAZ</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EW_RETURN</PARAMETER>
+       <TYP>BAPIRET2</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IW_RESULT_TETRAZ</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Entrada de Resultado - Tetrazólio</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EW_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Parâmetro de retorno</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

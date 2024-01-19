@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TRAN" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TSTC>
+    <TCODE>/SPROLIMS/TMANDT</TCODE>
+    <CINFO>Ag==</CINFO>
+   </TSTC>
+   <TSTCC>
+    <TCODE>/SPROLIMS/TMANDT</TCODE>
+    <S_WEBGUI>1</S_WEBGUI>
+    <S_WIN32>X</S_WIN32>
+    <S_PLATIN>X</S_PLATIN>
+   </TSTCC>
+   <TSTCT>
+    <SPRSL>P</SPRSL>
+    <TCODE>/SPROLIMS/TMANDT</TCODE>
+    <TTEXT>SM30 da tabela /SPROLIMS/TMANDT</TTEXT>
+   </TSTCT>
+   <TSTCP>
+    <TCODE>/SPROLIMS/TMANDT</TCODE>
+    <PARAM>/*SM30 VIEWNAME=/SPROLIMS/VMANDT;UPDATE=X;</PARAM>
+   </TSTCP>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>/SPROLIMS/CL_SOLICITATIO_VALID</CLSNAME>
+    <LANGU>P</LANGU>
+    <DESCRIPT>Class to Validate Solicitation</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>CAMPO</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Campo</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CULTIVAR</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Cultivar</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CULTIVAR_CAMPO</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Cultivar (Campo)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FAZENDA</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Fazenda</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>LABORATORY</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Laboratorio</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>LOG</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Log</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SOLICITATION</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Converter solicitação para QMEL</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>TALHAO</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Talhão</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>_HAS_CATEGORY</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Verificar se customizing CULTIVAR existe em /SPROLIMS/CDSCSO</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>_HAS_PEPS</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Verifica se fazenda existe</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>_HAS_USER_AUTH</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Verficar se usuario tem autorizacao</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IV_SOLICITATION</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Converter solicitação para QMEL</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_HAS_CATEGORY</CMPNAME>
+     <SCONAME>/SPROLIMS/CX_SOLICITATION</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Exceções para Solicitações</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_HAS_PEPS</CMPNAME>
+     <SCONAME>/SPROLIMS/CX_SOLICITATION</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Exceções para Solicitações</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_HAS_USER_AUTH</CMPNAME>
+     <SCONAME>/SPROLIMS/CX_SOLICITATION</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Exceções para Solicitações</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_HAS_USER_AUTH</CMPNAME>
+     <SCONAME>IV_PROCESS</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Processo realizado pelo usuario</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_HAS_USER_AUTH</CMPNAME>
+     <SCONAME>IV_SOLICITATION_ID</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Nº da notificação</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

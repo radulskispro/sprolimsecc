@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>/SPROLIMS/MC_REGIS</ARBGB>
+    <MASTERLANG>P</MASTERLANG>
+    <STEXT>Registro de Etapas</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>/SPROLIMS/MC_REGIS</ARBGB>
+     <MSGNR>000</MSGNR>
+     <TEXT>&amp; &amp; &amp; &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>/SPROLIMS/MC_REGIS</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Ord: &amp; /Etp: &amp; /Mat: &amp; / Lote não informado.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>/SPROLIMS/MC_REGIS</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Ord: &amp; /Etp: &amp; /Mat: &amp; / Depósito não informado.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>/SPROLIMS/MC_REGIS</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Ord: &amp; /Etp: &amp; / Etapa já confirmada.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>/SPROLIMS/MC_REGIS</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>Registrado início da ordem &amp;, etapa &amp;.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>/SPROLIMS/MC_REGIS</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>Registrado fim da ordem &amp;, etapa &amp;.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>/SPROLIMS/MC_REGIS</ARBGB>
+     <MSGNR>006</MSGNR>
+     <TEXT>Ord: &amp; /Etp: &amp; / Etapa não iniciada.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>/SPROLIMS/MC_REGIS</ARBGB>
+     <MSGNR>007</MSGNR>
+     <TEXT>Ord: &amp; /Etp: &amp; / Etapa já iniciada.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>/SPROLIMS/MC_REGIS</ARBGB>
+     <MSGNR>008</MSGNR>
+     <TEXT>Registrado estorno para ordem &amp;, etapa &amp;.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>/SPROLIMS/MC_REGIS</ARBGB>
+     <MSGNR>009</MSGNR>
+     <TEXT>Ord: &amp; /Etp: &amp; / Erro ao estornar etapa.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>/SPROLIMS/MC_REGIS</ARBGB>
+     <MSGNR>010</MSGNR>
+     <TEXT>Registrado consumo de materiais para ordem &amp;, etapa &amp;.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>/SPROLIMS/MC_REGIS</ARBGB>
+     <MSGNR>011</MSGNR>
+     <TEXT>Material &amp; não possui estoque no depósito &amp;.</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

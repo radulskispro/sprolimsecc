@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>/SPROLIMS/DE_TIPO_COLETA</ROLLNAME>
+    <DDLANGUAGE>P</DDLANGUAGE>
+    <DOMNAME>/SPROLIMS/DO_TIPO_COLETA</DOMNAME>
+    <HEADLEN>14</HEADLEN>
+    <SCRLEN1>09</SCRLEN1>
+    <SCRLEN2>14</SCRLEN2>
+    <SCRLEN3>14</SCRLEN3>
+    <DDTEXT>Tipo de Coleta</DDTEXT>
+    <REPTEXT>Tipo de Coleta</REPTEXT>
+    <SCRTEXT_S>Tp Coleta</SCRTEXT_S>
+    <SCRTEXT_M>Tipo de Coleta</SCRTEXT_M>
+    <SCRTEXT_L>Tipo de Coleta</SCRTEXT_L>
+    <DTELMASTER>P</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+  </asx:values>
+ </asx:abap>
+</abapGit>

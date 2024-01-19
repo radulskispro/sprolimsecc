@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TOBJ" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <OBJH>
+    <OBJECTNAME>/SPROLIMS/VCCARA</OBJECTNAME>
+    <OBJECTTYPE>V</OBJECTTYPE>
+    <CLIDEP>X</CLIDEP>
+    <OBJCATEG>CUST</OBJCATEG>
+   </OBJH>
+   <OBJT>
+    <LANGUAGE>P</LANGUAGE>
+    <OBJECTNAME>/SPROLIMS/VCCARA</OBJECTNAME>
+    <OBJECTTYPE>V</OBJECTTYPE>
+    <DDTEXT>Configuração - Classe e Característica</DDTEXT>
+   </OBJT>
+   <OBJS>
+    <OBJS>
+     <OBJECTNAME>/SPROLIMS/VCCARA</OBJECTNAME>
+     <OBJECTTYPE>V</OBJECTTYPE>
+     <TABNAME>/SPROLIMS/TCCARA</TABNAME>
+     <DDIC>X</DDIC>
+     <PRIM_TABLE>X</PRIM_TABLE>
+    </OBJS>
+   </OBJS>
+   <TOBJ>
+    <TDDAT>
+     <TABNAME>/SPROLIMS/VCCARA</TABNAME>
+     <CCLASS>/SPROLIMS/</CCLASS>
+    </TDDAT>
+    <TVDIR>
+     <TABNAME>/SPROLIMS/VCCARA</TABNAME>
+     <AREA>/SPROLIMS/VCCARA</AREA>
+     <TYPE>1</TYPE>
+     <LISTE>9000</LISTE>
+     <FLAG>X</FLAG>
+    </TVDIR>
+   </TOBJ>
+  </asx:values>
+ </asx:abap>
+</abapGit>
